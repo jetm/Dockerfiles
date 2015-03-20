@@ -16,3 +16,5 @@ RUN apt-get install -y \
     git \
     libpcap-dev \
     bzr-builder
+RUN apt-get clean
+
