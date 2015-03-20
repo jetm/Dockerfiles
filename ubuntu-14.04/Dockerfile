@@ -19,5 +19,6 @@ RUN apt-get install -y \
 RUN apt-get clean
 
 RUN adduser --ingroup users --disabled-password \
-    --gecos 'User to develop' john
+    --gecos 'User to develop' john && \
+    adduser john sudo
 
