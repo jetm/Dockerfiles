@@ -18,3 +18,6 @@ RUN apt-get install -y \
     bzr-builder
 RUN apt-get clean
 
+RUN adduser --ingroup users --disabled-password \
+    --gecos 'User to develop' john
+
